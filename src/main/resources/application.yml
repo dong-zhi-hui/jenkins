@@ -1,2 +1,14 @@
 server:
   port: 8081
+  servlet:
+    jsp:
+      init-parameters:
+        development: true
+    context-path: /
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/page/
+      suffix: .jsp
+    static-path-pattern: /static/**
